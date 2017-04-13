@@ -1,4 +1,4 @@
-package sequence2;
+package sequence;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -6,10 +6,11 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 // Performing Insert, Change, Delete function
-// Filemanager System
-// Authorized by hun
+// Filemanager System authorized by hun
 
-public class sequence2 {
+// input file record example : I, name, major, grade, private number, gender
+
+public class interpret_type {
 
 	public static void main(String[] args) throws IOException {
 
@@ -59,6 +60,7 @@ public class sequence2 {
 				}else if(trans[0].equals("D")){
 					checkDelete(table, trans, transchk);
 				}else
+					System.out.println("존재하지 않는 명령입니다.\r\n");
 					fwin.write("존재하지 않는 명령입니다.\r\n");
 				transchk++;
 			}
